@@ -1,0 +1,138 @@
+# Terraform
+**/.terraform/*
+*.tfstate
+*.tfstate.*
+*.tfplan
+tfplan
+crash.log
+crash.*.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+.terraformrc
+terraform.rc
+
+# Terraform variable files containing secrets
+*.auto.tfvars
+terraform.tfvars
+!terraform.tfvars.example
+
+# Terraform lock file (optional - uncomment to track)
+# .terraform.lock.hcl
+
+# Local backend state
+terraform/terraform.tfstate
+terraform/terraform.tfstate.backup
+
+# Environment-specific secrets (if any)
+*.secret
+*.secrets
+secrets/
+
+# Azure credentials
+.azure/
+azure.conf
+*.azurecreds
+
+# SSH Keys
+*.pem
+*.key
+id_rsa
+id_rsa.pub
+*.ppk
+
+# IDE and Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.settings/
+*.sublime-workspace
+*.sublime-project
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.temp
+*.bak
+*.backup
+
+# PowerShell
+*.ps1xml
+*.psm1.backup
+
+# Python (if any scripts)
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+*.pyc
+.env
+.venv
+venv/
+
+# Node (if any)
+node_modules/
+package-lock.json
+yarn.lock
+
+# Archives
+*.zip
+*.tar
+*.tar.gz
+*.rar
+*.7z
+
+# Sensitive documentation
+CREDENTIALS.md
+SECRETS.md
+*.credentials
+passwords.txt
+
+# Cost and billing reports (may contain sensitive data)
+cost-reports/
+billing/
+
+# Local development overrides
+local.tf
+local.tfvars
+dev.local.tfvars
+
+# Backup files
+*.orig
+*.bkp
+
+# macOS
+.AppleDouble
+.LSOverride
+Icon
+.DocumentRevisions-V100
+.fseventsd
+.TemporaryItems
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Windows
+$RECYCLE.BIN/
+*.lnk

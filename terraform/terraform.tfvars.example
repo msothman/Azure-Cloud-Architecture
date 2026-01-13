@@ -1,0 +1,49 @@
+# Terraform Variables Example File
+# Copy this file to terraform.tfvars and fill in your values
+# NEVER commit terraform.tfvars to version control
+
+# Project Configuration
+project_name  = "cloudarch"
+project_short = "cloudarch"
+environment   = "dev"
+location      = "uksouth"
+location_short = "uks"
+
+# Networking
+vnet_address_space       = "10.0.0.0/16"
+web_subnet_prefix        = "10.0.1.0/24"
+app_subnet_prefix        = "10.0.2.0/24"
+data_subnet_prefix       = "10.0.3.0/24"
+management_subnet_prefix = "10.0.4.0/24"
+
+# Compute
+web_vm_count = 2
+web_vm_size  = "Standard_B2s"
+app_vm_size  = "Standard_B2s"
+admin_username = "azureadmin"
+os_disk_type = "StandardSSD_LRS"
+
+# SSH Public Key - Generate with: ssh-keygen -t rsa -b 4096
+# Paste the contents of ~/.ssh/id_rsa.pub here
+admin_ssh_public_key = "ssh-rsa AAAAB... your-email@example.com"
+
+# Storage
+storage_replication_type  = "LRS"
+enable_storage_versioning = true
+
+# Database
+database_sku         = "Basic"
+database_max_size_gb = 2
+sql_admin_username   = "sqladmin"
+
+# Azure AD Admin for SQL - Get with: az ad signed-in-user show --query id
+aad_admin_username  = "your-email@domain.com"
+aad_admin_object_id = "00000000-0000-0000-0000-000000000000"
+
+# Security
+log_retention_days    = 30
+alert_email_addresses = ["admin@example.com"]
+
+# Tags
+owner       = "Mohammad Othman"
+cost_center = "Learning"
