@@ -279,7 +279,7 @@ This project meets **NOS TECDT90341 - Design cloud architecture solutions** stan
 | PC10: Storage solutions | SQL Database, Blob Storage |
 | PC11: Documentation | README, ARCHITECTURE.md, DESIGN_DECISIONS.md |
 
-**Reference:** [NOS TECDT90341](https://www.ukstandards.org.uk/NOS/TECDT90341)
+**Reference:** [NOS TECDT90341](https://www.ukstandards.org.uk/en/nos-finder/TECDT90341%20/design-cloud-architecture-solutions)
 
 ## License
 
