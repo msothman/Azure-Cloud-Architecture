@@ -221,15 +221,15 @@ The solution addresses typical enterprise requirements for a scalable, secure, a
 
 ```
 ┌─────────────────────────────────────────────────────────┐
-│                    Azure DDoS Protection                 │
+│                    Azure DDoS Protection                │
 ├─────────────────────────────────────────────────────────┤
-│                    Network Security Groups               │
+│                    Network Security Groups              │
 ├─────────────────────────────────────────────────────────┤
-│                    Azure Firewall (Optional)             │
+│                    Azure Firewall (Optional)            │
 ├─────────────────────────────────────────────────────────┤
-│                    Application Security                  │
+│                    Application Security                 │
 ├─────────────────────────────────────────────────────────┤
-│                    Data Encryption                       │
+│                    Data Encryption                      │
 └─────────────────────────────────────────────────────────┘
 ```
 
@@ -263,7 +263,7 @@ The solution addresses typical enterprise requirements for a scalable, secure, a
 
 ```
 ┌─────────────┐     ┌─────────────┐     ┌─────────────┐
-│   VMs       │────▶│   Log       │────▶│   Azure     │
+│   VMs       │────▶│   Log       │───▶│   Azure     │
 │   Apps      │     │   Analytics │     │   Monitor   │
 │   Databases │     │   Workspace │     │   Alerts    │
 └─────────────┘     └─────────────┘     └─────────────┘
